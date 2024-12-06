@@ -7,7 +7,20 @@ return {
 
     local lspconfig = require "lspconfig"
 
-    local servers = { "html", "cssls" }
+    local servers = {
+      "html",
+      "cssls",
+      "bashls",
+      "clangd",
+      "docker_compose_language_service",
+      "dockerls",
+      "gopls",
+      "jsonls",
+      "rust_analyzer",
+      "ts_ls",
+      "sqls",
+    }
+
     local nvlsp = require "nvchad.configs.lspconfig"
 
     -- lsps with default config
