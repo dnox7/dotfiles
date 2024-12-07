@@ -22,3 +22,7 @@ map("n", "<A-CR>", function()
 end)
 
 map({ "n", "v" }, "<C-K>", '"_dd', { desc = "Delete a line without saving to clipboard" })
+
+map("n", "<C-l>", "<cmd>AerialToggle!<CR>")
+
+map("n", "<C-M-l>", "<cmd>Lspsaga outline<CR>", { desc = "Open outline" })
