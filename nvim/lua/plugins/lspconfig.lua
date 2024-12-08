@@ -31,5 +31,30 @@ return {
         capabilities = nvlsp.capabilities,
       }
     end
+
+    lspconfig.rust_analyzer.setup {
+      on_attach = nvlsp.on_attach,
+      capabilities = nvlsp.capabilities,
+      root_dir = function()
+        return vim.fn.getcwd()
+      end,
+      cmd = { "rustup", "run", "stable", "rust-analyzer" },
+      settings = {
+        rust_analyzer = {
+          useLibraryCodeForTypes = true,
+          autoSearchPaths = true,
+          autoImportCompletions = false,
+          reportMissingImports = true,
+          followImportForHints = true,
+
+          cargo = {
+            allFeatures = true,
+          },
+          checkOnSave = {
+            command = "cargo clippy",
+          },
+        },
+      },
+    }
   end,
 }
