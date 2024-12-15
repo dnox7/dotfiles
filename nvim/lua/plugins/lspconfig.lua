@@ -31,13 +31,9 @@ return {
         capabilities = nvlsp.capabilities,
       }
     end
-<<<<<<< HEAD
 
     lspconfig.rust_analyzer.setup {
-      on_attach = function(client, bufnr)
-        local mode = vim.api.nvim_get_mode().mode
-        vim.lsp.inlay_hint.enable(mode == "n" or mode == "v", { bufnr = bufnr })
-      end,
+      on_attach = nvlsp.on_attach,
       capabilities = nvlsp.capabilities,
       root_dir = function()
         return vim.fn.getcwd()
@@ -60,7 +56,5 @@ return {
         },
       },
     }
-=======
->>>>>>> parent of cdf043d (update: rust_analyzer lspconfig (lmao!))
   end,
 }
