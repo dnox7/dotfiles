@@ -31,6 +31,7 @@ return {
         capabilities = nvlsp.capabilities,
       }
     end
+<<<<<<< HEAD
 
     lspconfig.rust_analyzer.setup {
       on_attach = function(client, bufnr)
@@ -59,5 +60,7 @@ return {
         },
       },
     }
+=======
+>>>>>>> parent of cdf043d (update: rust_analyzer lspconfig (lmao!))
   end,
 }
