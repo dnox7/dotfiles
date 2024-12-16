@@ -33,8 +33,13 @@ return {
     end
 
     lspconfig.rust_analyzer.setup {
-      on_attach = nvlsp.on_attach,
-      capabilities = nvlsp.capabilities,
+      on_attach = function(_, bufnr)
+        if nvlsp.on_attach then
+          nvlsp.on_attach(_, bufnr)
+        end
+        local mode = vim.api.nvim_get_mode().mode
+        vim.lsp.inlay_hint.enable(mode == "n" or mode == "r", { bufnr = bufnr })
+      end,
       root_dir = function()
         return vim.fn.getcwd()
       end,
