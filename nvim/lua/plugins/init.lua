@@ -9,4 +9,5 @@ return {
   { import = "plugins.lspsaga" },
   { import = "plugins.lazygit" },
   { import = "plugins.neotest" },
+  { import = "plugins.dap" },
 }
