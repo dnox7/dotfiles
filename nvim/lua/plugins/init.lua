@@ -8,4 +8,5 @@ return {
   { import = "plugins.aerial" },
   { import = "plugins.lspsaga" },
   { import = "plugins.lazygit" },
+  { import = "plugins.neotest" },
 }

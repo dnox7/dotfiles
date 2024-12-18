@@ -15,7 +15,7 @@ map({ "n", "t" }, "<A-v>", function()
   term.toggle { pos = "vsp", id = "tsukuyomi" }
 end)
 
-map({ "n", "v", "i" }, "<A-e>", "$", { silent = true })
+map({ "n", "v", "i" }, "<C-Space>", "$", { silent = true })
 
 map("n", "<A-CR>", function()
   vim.lsp.buf.code_action()
