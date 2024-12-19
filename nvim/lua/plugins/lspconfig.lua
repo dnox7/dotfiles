@@ -19,6 +19,7 @@ return {
       "rust_analyzer",
       "ts_ls",
       "sqls",
+      "pyright",
     }
 
     local nvlsp = require "nvchad.configs.lspconfig"

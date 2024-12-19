@@ -30,6 +30,7 @@ return {
       "typescript",
       "xml",
       "yaml",
+      "python",
     },
   },
 }

@@ -8,6 +8,7 @@ return {
       go = { "goimports", "gofmt" },
       rust = { "rustfmt" },
       bash = { "shfmt" },
+      python = { "pyink" },
     },
 
     format_on_save = {
