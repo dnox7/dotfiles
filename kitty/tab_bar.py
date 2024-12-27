@@ -68,7 +68,7 @@ def _get_datetime_cell() -> dict:
 
 
 def _get_battery_cell() -> dict:
-    cell = {"icon": "", "icon_bg_color": "#f9e2af", "text": ""}
+    cell = {"icon": ERR_ICON, "icon_bg_color": "#f9e2af", "text": ""}
 
     try:
         with open("/sys/class/power_supply/BAT0/status", "r") as f:
