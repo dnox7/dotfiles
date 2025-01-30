@@ -18,7 +18,6 @@ return {
       "jsonls",
       "rust_analyzer",
       "ts_ls",
-      "sqls",
       "pyright",
     }
 
