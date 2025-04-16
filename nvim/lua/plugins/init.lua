@@ -10,4 +10,5 @@ return {
   { import = "plugins.lazygit" },
   { import = "plugins.neotest" },
   { import = "plugins.diffview" },
+  { import = "plugins.visual-multi" },
 }
