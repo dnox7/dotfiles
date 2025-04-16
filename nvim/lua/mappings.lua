@@ -24,3 +24,6 @@ end)
 map({ "n", "v" }, "<C-K>", '"_dd', { desc = "Delete a line without saving to clipboard" })
 
 map("n", "<C-M-l>", "<cmd>Lspsaga outline<CR>", { desc = "Open outline" })
+
+map("v", "<A-Up>", ":m '<-2<CR>gv=gv")
+map("v", "<A-Down>", ":m '>+1<CR>gv=gv")
