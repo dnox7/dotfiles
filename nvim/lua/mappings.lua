@@ -27,3 +27,4 @@ map("n", "<C-M-l>", "<cmd>Lspsaga outline<CR>", { desc = "Open outline" })
 
 map("v", "<A-Up>", ":m '<-2<CR>gv=gv")
 map("v", "<A-Down>", ":m '>+1<CR>gv=gv")
+map("n", "<C-b>", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle NvimTree" })
