@@ -31,6 +31,8 @@ return {
       "xml",
       "yaml",
       "python",
+      "hcl",
+      "terraform",
     },
   },
 }
