@@ -33,6 +33,7 @@ return {
       "python",
       "hcl",
       "terraform",
+      "proto",
     },
   },
 }
