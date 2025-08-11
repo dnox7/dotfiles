@@ -19,6 +19,8 @@ return {
       "rust_analyzer",
       "ts_ls",
       "pyright",
+      "erlang-ls",
+      "elixir-ls",
     }
 
     local nvlsp = require "nvchad.configs.lspconfig"

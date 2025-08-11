@@ -34,6 +34,8 @@ return {
       "hcl",
       "terraform",
       "proto",
+      "erlang",
+      "elixir",
     },
   },
 }
