@@ -63,5 +63,10 @@ return {
         },
       },
     }
+
+    local elixirls_path = os.getenv "ELIXIR_LS_PATH"
+    lspconfig.elixirls.setup {
+      cmd = { elixirls_path },
+    }
   end,
 }
