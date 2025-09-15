@@ -19,6 +19,7 @@ return {
       "rust_analyzer",
       "ts_ls",
       "pyright",
+      "cmake",
     }
 
     local nvlsp = require "nvchad.configs.lspconfig"
@@ -59,6 +60,15 @@ return {
             command = "cargo clippy",
           },
         },
+      },
+    }
+
+    lspconfig.cmake.setup {
+      cmd = { "cmake-language-server" },
+      filetypes = { "cmake", "txt" },
+      root_dir = lspconfig.util.root_pattern("CMakeLists.txt", ".git"),
+      initializationOptions = {
+        buildDirectory = "build",
       },
     }
   end,
