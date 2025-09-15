@@ -19,6 +19,8 @@ return {
       "rust_analyzer",
       "ts_ls",
       "pyright",
+      "erlangls",
+      "elixirls",
     }
 
     local nvlsp = require "nvchad.configs.lspconfig"
@@ -60,6 +62,11 @@ return {
           },
         },
       },
+    }
+
+    local elixirls_path = os.getenv "ELIXIR_LS_PATH"
+    lspconfig.elixirls.setup {
+      cmd = { elixirls_path },
     }
   end,
 }
